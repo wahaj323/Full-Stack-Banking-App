@@ -1,13 +1,15 @@
-// server.js - Node.js Express Backend
-const express = require('express');
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const cors = require('cors');
-const crypto = require('crypto');
+import express from 'express';
+import mongoose from 'mongoose';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import cors from 'cors';
+import crypto from 'crypto';
 import path from 'path';
-const cookieParser = require('cookie-parser');
-require('dotenv').config();
+import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
+
+// Initialize environment variables
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
